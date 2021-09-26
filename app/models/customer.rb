@@ -10,6 +10,7 @@ class Customer < ApplicationRecord
 
   validates :postal_code, numericality: true
   validates :telephone_number, numericality: true
+  validates :email, uniqueness: true
 
 
 end
