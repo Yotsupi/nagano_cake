@@ -1,0 +1,17 @@
+<h1>新規商品登録</h1>
+
+<%= form_with model: @item, url: admin_items_path, local:true do |f| %>
+  <p>商品画像</p>
+  <%= f.attachment_field :image %>
+  <p>商品名</p>
+  <%= f.text_field :name, placeholder: "商品名" %>
+  <p>商品説明</p>
+  <%= f.text_area :introduction, placeholder: "ここに説明文を記述します" %>
+  <p>税抜価格</p>
+  <%= f.text_field :price, placeholder: "1000" %>
+  <p>販売ステータス</p>
+  <%= f.radio_button :is_active, "販売中" %>販売中
+  <%= f.radio_button :is_active, "販売停止中" %>販売停止中
+  <br>
+  <%= f.submit '新規登録' %>
+<% end %>

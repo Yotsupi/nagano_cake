@@ -1,0 +1,15 @@
+<h2>商品詳細</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <%= attachment_image_tag @item, :image, :fill, 200, 150 %>
+    </div>
+    <div class="col-9">
+      <p>商品名　<%= @item.name %></p>
+      <p>商品説明　<%= @item.introduction %></p>
+      <p>価格　<%= @item.price %></p>
+      <p>販売ステータス　<%= @item.is_active %></p>
+    </div>
+  </div>
+
+</div>
