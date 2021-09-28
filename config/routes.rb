@@ -12,11 +12,15 @@ Rails.application.routes.draw do
     registrations: 'customers/registrations'
   }
 
-  root to: 'customers/homes#top'
-  get "/about" => "customers/homes#about"
-
+  root to: 'public/homes#top'
+  get "/about" => "public/homes#about"
+  resources :customers, only: [:show, :edit, :update]
+  
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show, :edit, :update]
-
   end
+
+  namespace :public do
+  end
+
 end

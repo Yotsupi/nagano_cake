@@ -1,0 +1,24 @@
+<h2>商品一覧</h2>
+
+<table class="table">
+  <thead>
+    <th>商品ID</th>
+    <th>商品名</th>
+    <th>税抜価格</th>
+    <th>ステータス</th>
+  </thead>
+  <% @items.each do |item|  %>
+  <tbody>
+    <td><%= item.id %></td>
+    <td><%= link_to "#{item.name}", admin_item_path(item.id) %></td>
+    <td><%= number_to_currency(item.price, unit: "¥",strip_insignificant_zeros: true) %></td>
+    <td>
+      <% if item.is_active == true %>
+      販売中
+      <% else %>
+      販売停止中
+      <% end %>
+    </td>
+  </tbody>
+  <% end %>
+</table>
