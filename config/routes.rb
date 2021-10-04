@@ -20,9 +20,11 @@ Rails.application.routes.draw do
 
   resource :customers, only: [:show, :edit, :update]
   get "/customers/confirm" => "customers#confirm"
+  patch "/customers/withdraw" => "customers#withdraw", as: 'withdraw_customer'
 
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show, :edit, :update]
+    resources :customers, only: [:index, :show, :edit, :update]
   end
 
   namespace :public do
