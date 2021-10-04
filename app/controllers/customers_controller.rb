@@ -10,8 +10,19 @@ class CustomersController < ApplicationController
   def update
     customer = current_customer
     customer.update(customer_params)
-    redirect_to customer_path
+    redirect_to customers_path
   end
+
+  def confirm
+  end
+
+  def withdraw
+    @customer = current_customer
+    #customer.update(is_active: false )
+    reset_session
+    redirect_to root_path
+  end
+
 
   private
 

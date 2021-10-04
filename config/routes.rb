@@ -9,13 +9,18 @@ Rails.application.routes.draw do
   devise_for :customers, controllers: {
     sessions:      'customers/sessions',
     passwords:     'customers/passwords',
-    registrations: 'customers/registrations'
-  }
+  },skip: [:registrations]
+
+  devise_scope :customer do
+    get "/customers/sign_up" => "customers/registrations#new"
+    post "/customers" => "customers/registrations#create"
+  end
 
   root to: 'public/homes#top'
-  get "/about" => "public/homes#about"
-  resources :customers, only: [:show, :edit, :update]
-  
+
+  resource :customers, only: [:show, :edit, :update]
+  get "/customers/confirm" => "customers#confirm"
+
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show, :edit, :update]
   end
