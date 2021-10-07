@@ -8,6 +8,7 @@
       <p>商品名　<%= @item.name %></p>
       <p>商品説明　<%= @item.introduction %></p>
       <p>価格　<%= @item.price %></p>
+      <p>ジャンル　<%= @genre.name %></p>
       <p>販売ステータス
         <% if @item.is_active == true %>
           販売中

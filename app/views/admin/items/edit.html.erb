@@ -7,6 +7,8 @@
   <%= f.text_field :name %>
   <p>商品説明</p>
   <%= f.text_area :introduction %>
+  <p>ジャンル</p>
+  <%= f.collection_select :genre_id, @genres.all, :id, :name, include_blank: "----" %>
   <p>税抜価格</p>
   <%= f.text_field :price %>
   <p>販売ステータス</p>

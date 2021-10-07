@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   end
 
   root to: 'public/homes#top'
+  get "/about" => "public/homes#about"
 
   resource :customers, only: [:show, :edit, :update]
   get "/customers/confirm" => "customers#confirm"
@@ -29,6 +30,7 @@ Rails.application.routes.draw do
   end
 
   namespace :public do
+    resources :items only: [:index, :show]
   end
 
 end
