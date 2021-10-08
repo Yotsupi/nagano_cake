@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   end
 
   namespace :public do
-    resources :items only: [:index, :show]
+    resources :items, only: [:index, :show]
   end
 
 end
