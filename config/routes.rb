@@ -22,6 +22,9 @@ Rails.application.routes.draw do
   resource :customers, only: [:show, :edit, :update]
   get "/customers/confirm" => "customers#confirm"
   patch "/customers/withdraw" => "customers#withdraw", as: 'withdraw_customer'
+  
+  resources :cart_items, only: [:index, :update, :destroy, :create]
+  delete "/cart_items" => "public/cart_items#empty"
 
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show, :edit, :update]
@@ -29,8 +32,7 @@ Rails.application.routes.draw do
     resources :genres, only: [:index, :create, :edit, :update]
   end
 
-  namespace :public do
-    resources :items, only: [:index, :show]
-  end
 
+  resources :items, only: [:index, :show], module: :public
+  
 end

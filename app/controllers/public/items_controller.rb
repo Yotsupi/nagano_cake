@@ -5,7 +5,7 @@ class Public::ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
-    @tax = 1.1
+    @tax_in_price = @item.price*1.1
   end
 
 end

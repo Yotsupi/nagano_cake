@@ -6,11 +6,15 @@
     <div class="col-9">
       <h4><%= @item.name %></h4>
       <p><%= @item.introduction %></p>
-      <p><%= (@item.price*@tax).round %>(税込)</p>
+      <p><%= @tax_in_price.round %>(税込)</p>
     </div>
   </div>
   <div class="row">
-    <%= link_to "編集する", edit_admin_item_path ,class:"btn btn-success btn-lg" %>
+    <%= form_with model: @cart_items, url: cart_items_path, local:true do |f| %>
+    <%= f.select :amount, *[1..10], prompt: "個数選択" %>
+    <%= f.submit 'カートに入れる', class:"btn-success" %>
+    <%= f.hidden_field :, value: "楽しいRuby" %>
+    <% end %>
   </div>
 
 </div>

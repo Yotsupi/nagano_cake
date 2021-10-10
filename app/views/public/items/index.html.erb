@@ -1,0 +1,18 @@
+<h2>商品一覧(全<%= @items.count %>件)</h2>
+<div class="container">
+  <div class="row">
+    <% @items.each do |item|  %>
+    <div class="col-sm-3">
+      <div class="card" style="width: 18rem;">
+        <%= link_to item_path(item.id) do %>
+          <%= attachment_image_tag item, :image, :fill, 120, 90 %>
+        <% end %>
+        <div class ="card-body">
+        <h7 class="card-title"><%= item.name %></h7>
+        <p class="card-text"><%= number_to_currency(item.price, unit: "¥",strip_insignificant_zeros: true) %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
