@@ -6,14 +6,15 @@
     <div class="col-9">
       <h4><%= @item.name %></h4>
       <p><%= @item.introduction %></p>
-      <p><%= @tax_in_price.round %>(税込)</p>
+      <p>¥<%= @item.with_tax_price %>(税込)</p>
     </div>
   </div>
   <div class="row">
-    <%= form_with model: @cart_items, url: cart_items_path, local:true do |f| %>
+    <%= form_with model: @cart_item, url: cart_items_path, local:true do |f| %>
     <%= f.select :amount, *[1..10], prompt: "個数選択" %>
+    <%= f.hidden_field :customer_id, value: current_customer.id %>
+    <%= f.hidden_field :item_id, value: @item.id %>
     <%= f.submit 'カートに入れる', class:"btn-success" %>
-    <%= f.hidden_field :, value: "楽しいRuby" %>
     <% end %>
   </div>
 

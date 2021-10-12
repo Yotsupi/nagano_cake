@@ -1,4 +1,4 @@
 class Address < ApplicationRecord
-  validates :postal_code, numericality: true
   belongs_to :customer
+  validates :postal_code, numericality: true
 end
