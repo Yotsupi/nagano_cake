@@ -1,0 +1,20 @@
+<div class="continer">
+  <div class="row">
+    <h4>注文情報入力</h4>
+  </div>
+
+  <%= form_with model: @order, url: orders_path, local: true do |f| %>
+  <div class="row">
+    <strong>支払い方法</strong>
+    <%= f.radio_button :payment, 0 %>クレジットカード
+    <%= f.radio_button :payment, 1 %>銀行振込
+  </div>
+
+  <div class="row">
+    <strong>お届け先</strong>
+    <%= f.radio_button :address, 2 %>
+  </div>
+
+  <% end %>
+
+</div>
