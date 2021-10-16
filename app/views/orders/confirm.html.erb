@@ -1,1 +1,30 @@
-<%= @order.name %>
+<div class="container">
+  <div class="row">
+    <h4>注文情報確認</h4>
+  </div>
+
+  <div class ="row">
+    <table class="table mr-3">
+        <thead>
+         <th>商品名</th>
+         <th>単価(税込)</th>
+         <th>数量</th>
+         <th>小計</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+  </div>
+  <div class="row">
+      <strong>支払い方法　</strong>
+      <%= @order.payment_i18n %>
+  </div>
+
+  <div class="row">
+      <strong>お届け先　</strong>
+      <%= @order.address_information %>
+  </div>
+
+
+</div>

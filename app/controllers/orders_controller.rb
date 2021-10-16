@@ -4,13 +4,8 @@ class OrdersController < ApplicationController
     @addresses = Address.all
   end
 
-  def create
-    order = Order.new(order_params)
-    order.save
-    redirect_to confirm_path
-  end
-
   def confirm
+  @cart_items = CartItem.all
   @order = Order.new(order_params)
   if params[:order][:address] == "0"
     @order.postal_code = current_customer.postal_code
@@ -20,8 +15,18 @@ class OrdersController < ApplicationController
     elsif params[:order][:address] == "1"
     @address = Address.find(params[:order][:address_id])
     @order.address = @address.address
+    @order.postal_code = @address.postal_code
+    @order.name = @address.name
 
+    elsif params[:order][:address] == "2"
+    @order.address = params[:order][:new_address]
     end
+  end
+
+  def create
+    order = Order.new(order_params)
+    order.save
+    redirect_to confirm_path
   end
 
   def thanks
