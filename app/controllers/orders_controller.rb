@@ -5,28 +5,31 @@ class OrdersController < ApplicationController
   end
 
   def confirm
-  @cart_items = CartItem.all
-  @order = Order.new(order_params)
-  if params[:order][:address] == "0"
-    @order.postal_code = current_customer.postal_code
-    @order.address = current_customer.address
-    @order.name = current_customer.name
+    @cart_items = CartItem.all
+    @total = 0
+    @order = Order.new(order_params)
+    if params[:order][:address] == "0"
+      @order.postal_code = current_customer.postal_code
+      @order.address = current_customer.address
+      @order.name = current_customer.name
 
-    elsif params[:order][:address] == "1"
-    @address = Address.find(params[:order][:address_id])
-    @order.address = @address.address
-    @order.postal_code = @address.postal_code
-    @order.name = @address.name
+      elsif params[:order][:address] == "1"
+      @address = Address.find(params[:order][:address_id])
+      @order.address = @address.address
+      @order.postal_code = @address.postal_code
+      @order.name = @address.name
 
-    elsif params[:order][:address] == "2"
-    @order.address = params[:order][:new_address]
+      elsif params[:order][:address] == "2"
+      @order.address = params[:order][:new_address]
     end
+    @order.customer_id = current_customer.id
+    @order.postage = 800
   end
 
   def create
     order = Order.new(order_params)
     order.save
-    redirect_to confirm_path
+    redirect_to thanks_path
   end
 
   def thanks
