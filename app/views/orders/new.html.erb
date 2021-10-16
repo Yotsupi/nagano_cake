@@ -1,20 +1,39 @@
-<div class="continer">
+<div class="container">
   <div class="row">
     <h4>注文情報入力</h4>
   </div>
 
-  <%= form_with model: @order, url: orders_path, local: true do |f| %>
+  <%= form_with model: @order, url: confirm_path, local: true do |f| %>
   <div class="row">
     <strong>支払い方法</strong>
-    <%= f.radio_button :payment, 0 %>クレジットカード
-    <%= f.radio_button :payment, 1 %>銀行振込
+    <%= f.radio_button :payment, :credit_card %>
+    <%= f.label :payment, "クレジットカード" %>
+
+    <%= f.radio_button :payment, :transfer %>
+    <%= f.label :payment, "銀行振込" %>
   </div>
 
   <div class="row">
     <strong>お届け先</strong>
-    <%= f.radio_button :address, 2 %>
-  </div>
+    <div class="field">
+    <%= f.radio_button :address, 0, class:"d-block" %>ご自身の住所<br>
+    <%= current_customer.address_information %>
+    </div>
+    <div class="field">
+    <%= f.radio_button :address, 1, class:"d-block" %>登録済み住所から選択<br>
+    <%= f.collection_select :address_id, @addresses, :id, :address_information  %>
+    </div>
+    <div class="field">
+    <%= f.radio_button :address, 2, class:"d-block" %>新しいお届け先<br>
+     郵便番号(ハイフン無し)<%= f.text_field :postal_code, placeholder: "0000000" %><br>
+     住所<%= f.text_field :address, placeholder: "東京都渋谷区代々木神園町" %><br>
+     宛名<%= f.text_field :name, placeholder: "令和道子" %>
 
+
+    </div>
+
+  </div>
+    <%= f.submit '確認画面へ進む', class:'btn btn-primary' %>
   <% end %>
 
 </div>

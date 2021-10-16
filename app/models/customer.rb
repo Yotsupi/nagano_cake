@@ -12,5 +12,16 @@ class Customer < ApplicationRecord
   validates :telephone_number, numericality: true
   validates :email, uniqueness: true
 
+  def name
+    last_name + " " + first_name
+  end
+
+  def kana
+    last_name_kana + " " + "first_name_kana"
+  end
+
+  def address_information
+    "〒" + postal_code + " " + address + " " + name
+  end
 
 end
