@@ -1,6 +1,6 @@
 <h2>新規会員登録</h2>
 
-<%= form_with model: @customer, url: "customers/sign_up", id: 'new_customer', class: 'new_customer', local: true do |f| %>
+<%= form_with model: @customer, url: new_customer_path, id: 'new_customer', class: 'new_customer', local: true do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">

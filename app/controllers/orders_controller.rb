@@ -24,21 +24,41 @@ class OrdersController < ApplicationController
     end
     @order.customer_id = current_customer.id
     @order.postage = 800
+    @order.billing_amount = @order.postage + @cart_items.sum{ |cart_item| cart_item.subtotal }
   end
 
   def create
     order = Order.new(order_params)
     order.save
+    cart_items = CartItem.all
+    cart_items.each do |cart_item|
+      order_item = OrderItem.new
+      order_item.order_id = order.id
+      order_item.item_id = cart_item.item.id
+      order_item.price = cart_item.item.price
+      order_item.amount = cart_item.amount
+      order_item.save
+    end
+    cart_items.destroy_all
     redirect_to thanks_path
   end
 
   def thanks
   end
 
+  def index
+    @orders = Order.all
+  end
+
+  def show
+    @order = Order.find(params[:id])
+    @total = 0
+  end
+
 
   private
   def order_params
-    params.require(:order).permit(:name, :postal_code, :address, :payment, :billing_amount, :postage, :status, :address_id)
+    params.require(:order).permit(:name, :postal_code, :address, :payment, :billing_amount, :postage, :status, :customer_id)
   end
 
 end

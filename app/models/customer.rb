@@ -24,4 +24,8 @@ class Customer < ApplicationRecord
     "〒" + postal_code + " " + address + " " + name
   end
 
+  def active_for_authentication?
+    super && (self.is_active == true)
+  end
+
 end

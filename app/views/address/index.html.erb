@@ -25,6 +25,7 @@
         <th></th>
       </thead>
         <% @addresses.each do |address| %>
+         <% if address.customer_id == current_customer.id %>
         <tbody>
           <td><%= address.postal_code %></td>
           <td><%= address.address %></td>
@@ -34,6 +35,7 @@
             <%= link_to "削除する", address_path(address.id), method: :delete, class: "btn btn-success" %>
           </td>
         </tbody>
+         <% end %>
         <% end %>
     </table>
   </div>

@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   devise_scope :customer do
     get "/customers/sign_up" => "customers/registrations#new"
-    post "/customers" => "customers/registrations#create"
+    post "/customers" => "customers/registrations#create", as: 'new_customer'
   end
 
   root to: 'public/homes#top'

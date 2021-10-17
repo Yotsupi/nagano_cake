@@ -6,9 +6,9 @@
   <%= form_with model: @order, url: confirm_path, local: true do |f| %>
   <div class="container">
     <strong>支払い方法</strong>
-    <%= f.radio_button :payment, 0 %>
+    <%= f.radio_button :payment, "credit_card" %>
     <%= f.label :payment, "クレジットカード" %>
-    <%= f.radio_button :payment, 1 %>
+    <%= f.radio_button :payment, "transfer" %>
     <%= f.label :payment, "銀行振込" %>
   </div>
 
