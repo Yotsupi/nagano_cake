@@ -2,7 +2,15 @@ class CartItemsController < ApplicationController
   before_action :authenticate_customer!
 
   def create
+    @cart_items = CartItem.all
     @cart_item = CartItem.new(cart_item_params)
+    @cart_items.each do |cart_item|
+      if cart_item.item_id == @cart_item.item_id
+        cart_item.amount += @cart_item.amount
+        cart_item.update_attribute(:amount, cart_item.amount)
+        @cart_item.destroy
+      end
+    end
     @cart_item.save
     redirect_to cart_items_path
   end
@@ -27,7 +35,7 @@ class CartItemsController < ApplicationController
   def empty
     cart_items = CartItem.all
     cart_items.destroy_all
-    redirect_to items_path
+    redirect_to cart_items_path
   end
 
     private
