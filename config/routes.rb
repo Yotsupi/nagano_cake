@@ -30,7 +30,6 @@ Rails.application.routes.draw do
 
   get "public/orders/thanks" => "public/orders#thanks", as: 'thanks'
   post "public/orders/confirm" => "public/orders#confirm", as: 'confirm'
-  resources :orders, only: [:new, :create, :index, :show], module: :public
 
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show, :edit, :update]
@@ -39,7 +38,9 @@ Rails.application.routes.draw do
     resources :orders, only: [:show, :index]
   end
 
-
-  resources :items, only: [:index, :show], module: :public
+  scope module: :public do
+    resources :items, only: [:index, :show]
+    resources :orders, only: [:new, :create, :index, :show]
+  end
 
 end
