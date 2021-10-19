@@ -28,14 +28,15 @@ Rails.application.routes.draw do
 
   resources :address, only: [:index, :edit, :create, :update, :destroy]
 
-  get "/orders/thanks" => "orders#thanks", as: 'thanks'
-  post "/orders/confirm" => "orders#confirm", as: 'confirm'
-  resources :orders, only: [:new, :create, :index, :show]
+  get "public/orders/thanks" => "public/orders#thanks", as: 'thanks'
+  post "public/orders/confirm" => "public/orders#confirm", as: 'confirm'
+  resources :orders, only: [:new, :create, :index, :show], module: :public
 
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show, :edit, :update]
     resources :customers, only: [:index, :show, :edit, :update]
     resources :genres, only: [:index, :create, :edit, :update]
+    resources :orders, only: [:show, :index]
   end
 
 

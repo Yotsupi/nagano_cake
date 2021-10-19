@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-8">
       <h7>注文情報</h7>
-      <table class="table">
+      <table class="table table-bordered">
         <tr>
           <th>注文日</th>
           <td><%= @order.created_at.strftime('%Y/%m/%d') %></td>
@@ -26,7 +26,7 @@
     </div>
     <div class="col-4">
       <h7>請求情報</h7>
-      <table class="table">
+      <table class="table table-bordered">
         <tr>
           <th>商品合計</th>
           <td>
@@ -49,7 +49,7 @@
   </div>
   <div class="row">
     <h7>注文内容</h7>
-    <table class="table">
+    <table class="table table-bordered">
       <thead>
         <th>商品</th>
         <th>単価(税込)</th>
