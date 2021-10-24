@@ -3679,3 +3679,786 @@ Processing by Customers::RegistrationsController#new as HTML
 Completed 200 OK in 89ms (Views: 88.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:08:03 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 858ms (Views: 849.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:08:04 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 162ms (Views: 161.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:09:16 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:20:07 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 201ms (Views: 185.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/attachments/5c1a40f393a53826ccf7aa83df6c9e83b981ba05/store/fill/120/90/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" for 126.91.218.199 at 2021-10-24 11:20:07 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/1e0e7f42833a45c97c64b79d1e9236ddbb879344/store/fill/120/90/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" for 126.91.218.199 at 2021-10-24 11:20:07 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/9fd61a11e11135f8714869eed2b554af9c2503cd/store/fill/120/90/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" for 126.91.218.199 at 2021-10-24 11:20:07 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/bc21f1d86bbc5ae4ad16240eec58369463b6d2b3/store/fill/120/90/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" for 126.91.218.199 at 2021-10-24 11:20:07 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 11:20:08 +0000] GET "/1e0e7f42833a45c97c64b79d1e9236ddbb879344/store/fill/120/90/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" 200 293.3ms
+
+Refile::App: [2021-10-24 11:20:08 +0000] GET "/bc21f1d86bbc5ae4ad16240eec58369463b6d2b3/store/fill/120/90/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" 200 316.9ms
+
+Refile::App: [2021-10-24 11:20:08 +0000] GET "/9fd61a11e11135f8714869eed2b554af9c2503cd/store/fill/120/90/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" 200 341.6ms
+
+Refile::App: [2021-10-24 11:20:08 +0000] GET "/5c1a40f393a53826ccf7aa83df6c9e83b981ba05/store/fill/120/90/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" 200 500.8ms
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:20:57 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:21:07 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:21:20 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 113ms (Views: 111.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:22:20 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:22:56 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 105ms (Views: 104.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:23:49 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:24:08 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:24:12 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:25:13 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 146ms (Views: 144.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:33:02 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/a05a4001994ff4f9805d48e620de84c8b71d1786/store/fill/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" for 126.91.218.199 at 2021-10-24 11:33:03 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/f326053d4c6f4684364255ac528d4d60daa42301/store/fill/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" for 126.91.218.199 at 2021-10-24 11:33:03 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Error -> wrong number of arguments (given 1, expected 3..4)
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:75:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: Error -> wrong number of arguments (given 1, expected 3..4)
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:52:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:75:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:52:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Started GET "/attachments/f8e3dd68c993f66b34bf545ebfaa4b51825cad45/store/fill/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" for 126.91.218.199 at 2021-10-24 11:33:03 +0000
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: Error -> wrong number of arguments (given 1, expected 3..4)
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:75:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:52:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Started GET "/attachments/a6da0f574f14185802899eb3bc6fe55d74469b34/store/fill/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" for 126.91.218.199 at 2021-10-24 11:33:03 +0000
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: Error -> wrong number of arguments (given 1, expected 3..4)
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:75:in `fill'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/refile-mini_magick-0.2.0/lib/refile/mini_magick.rb:135:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/app.rb:52:in `block in <class:App>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1636:in `block in compile!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (3 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1006:in `route_eval'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:987:in `block (2 levels) in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1035:in `block in process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1033:in `process_route'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:985:in `block in route!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:984:in `route!'
+Refile::App: [2021-10-24 11:33:03 +0000] GET "/a05a4001994ff4f9805d48e620de84c8b71d1786/store/fill/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" 500 32.3ms
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-10-24 11:33:03 +0000] GET "/f8e3dd68c993f66b34bf545ebfaa4b51825cad45/store/fill/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" 500 44.0ms
+
+Refile::App: [2021-10-24 11:33:03 +0000] GET "/f326053d4c6f4684364255ac528d4d60daa42301/store/fill/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" 500 35.5ms
+
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1098:in `block in dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1095:in `dispatch!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `block in call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `block in invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1072:in `invoke'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:919:in `call!'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:908:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/custom_logger.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/xss_header.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/path_traversal.rb:16:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/json_csrf.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/base.rb:50:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-protection-2.0.8.1/lib/rack/protection/frame_options.rb:31:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:194:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sinatra-2.0.8.1/lib/sinatra/base.rb:1951:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/mapper.rb:48:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:52:in `block in serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `each'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/journey/router.rb:35:in `serve'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/routing/route_set.rb:840:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/tempfile_reaper.rb:15:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/etag.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/conditional_get.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:266:in `context'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/session/abstract/id.rb:260:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/cookies.rb:670:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/migration.rb:559:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/callbacks.rb:98:in `run_callbacks'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:135:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:22:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:38:in `call_app'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `block in call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `block in tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:28:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/tagged_logging.rb:71:in `tagged'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/rack/logger.rb:26:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/request_id.rb:27:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.6/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/executor.rb:14:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/actionpack-5.2.6/lib/action_dispatch/middleware/static.rb:127:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-5.2.6/lib/rails/engine.rb:524:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+Refile::App: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Refile::App: [2021-10-24 11:33:03 +0000] GET "/a6da0f574f14185802899eb3bc6fe55d74469b34/store/fill/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" 500 37.6ms
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:33:09 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:33:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/7db18a867c6d9bc6b0995275abce12d67d7c7e09/store/fill/240/180/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" for 126.91.218.199 at 2021-10-24 11:33:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/75652b5eac9a4fcf1e227579d5978205f32f1767/store/fill/240/180/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" for 126.91.218.199 at 2021-10-24 11:33:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/1512888c83961645729c1f7bf26400ce3fedcb8a/store/fill/240/180/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" for 126.91.218.199 at 2021-10-24 11:33:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/e96835521423af2a68182076c772339e0458680b/store/fill/240/180/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" for 126.91.218.199 at 2021-10-24 11:33:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 11:33:21 +0000] GET "/e96835521423af2a68182076c772339e0458680b/store/fill/240/180/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" 200 78.0ms
+
+Refile::App: [2021-10-24 11:33:21 +0000] GET "/1512888c83961645729c1f7bf26400ce3fedcb8a/store/fill/240/180/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" 200 113.0ms
+
+Refile::App: [2021-10-24 11:33:21 +0000] GET "/75652b5eac9a4fcf1e227579d5978205f32f1767/store/fill/240/180/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" 200 179.6ms
+
+Refile::App: [2021-10-24 11:33:22 +0000] GET "/7db18a867c6d9bc6b0995275abce12d67d7c7e09/store/fill/240/180/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" 200 338.9ms
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:33:51 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:33:55 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:1
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:4
+  Rendered public/items/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 108ms (Views: 106.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:37:13 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:2
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:5
+  Rendered public/items/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 126.91.218.199 at 2021-10-24 11:39:02 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:39:04 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:2
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:5
+  Rendered public/items/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 107ms (Views: 105.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/sign_up" for 126.91.218.199 at 2021-10-24 11:39:05 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Customers::RegistrationsController#new as HTML
+  Rendering customers/registrations/new.html.erb within layouts/application
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered customers/registrations/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 237ms (Views: 221.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about" for 126.91.218.199 at 2021-10-24 11:39:06 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:39:09 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:2
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:5
+  Rendered public/items/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 158ms (Views: 156.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 126.91.218.199 at 2021-10-24 11:39:11 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 126.91.218.199 at 2021-10-24 11:39:14 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#about as HTML
+  Rendering public/homes/about.html.erb within layouts/application
+  Rendered public/homes/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:39:19 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:41:01 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 115ms (Views: 109.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:41:29 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:2
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:5
+  Rendered public/items/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 140ms (Views: 139.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/attachments/fbbad973934c0a74b4839cf9b7724d07f3263662/store/fill/210/140/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" for 126.91.218.199 at 2021-10-24 11:41:29 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/4a2e13699ad132ff8316f4f031f8c93a6bd7c09f/store/fill/210/140/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" for 126.91.218.199 at 2021-10-24 11:41:29 +0000
+Started GET "/attachments/279b96bb6545ec1d1b48319afd3a4f7be86939fa/store/fill/210/140/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" for 126.91.218.199 at 2021-10-24 11:41:29 +0000
+Started GET "/attachments/d08da4c14a60fc2d2ee955daacb326047320cb90/store/fill/210/140/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" for 126.91.218.199 at 2021-10-24 11:41:29 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-10-24 11:41:30 +0000] GET "/d08da4c14a60fc2d2ee955daacb326047320cb90/store/fill/210/140/e69dc80699e62bf6f96b069de66fe5c9ab76d4e3c2612fca6933f721d2e3/image" 200 77.1ms
+
+Refile::App: [2021-10-24 11:41:30 +0000] GET "/279b96bb6545ec1d1b48319afd3a4f7be86939fa/store/fill/210/140/b3f46f4af32efdb106c2e24d0257940a19c04ec3fc5fe6cf27dff11be43a/image" 200 107.0ms
+
+Refile::App: [2021-10-24 11:41:30 +0000] GET "/4a2e13699ad132ff8316f4f031f8c93a6bd7c09f/store/fill/210/140/b1d9fdffc064ad951578254fba1fae39f57c49ff1f6d3d750c9cda81cdf4/image" 200 156.0ms
+
+Refile::App: [2021-10-24 11:41:30 +0000] GET "/fbbad973934c0a74b4839cf9b7724d07f3263662/store/fill/210/140/f45c41d5362f3d677f93d9083cb108e041299d566dd8fc87fc5b4f473e30/image" 200 285.2ms
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:41:48 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  Rendering public/homes/top.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/homes/top.html.erb:13
+  Rendered public/homes/top.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 121ms (Views: 118.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:43:51 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" IN (?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/controllers/public/homes_controller.rb:3
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 121ms (Views: 91.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:45:43 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" IN (?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/controllers/public/homes_controller.rb:3
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 104ms (Views: 100.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:46:46 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" IN (?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/controllers/public/homes_controller.rb:3
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-24 11:47:26 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" IN (?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/controllers/public/homes_controller.rb:3
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 96ms (Views: 91.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 126.91.218.199 at 2021-10-24 11:47:43 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::ItemsController#index as HTML
+  Rendering public/items/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:2
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/public/items/index.html.erb:5
+  Rendered public/items/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.3ms)
+
+
