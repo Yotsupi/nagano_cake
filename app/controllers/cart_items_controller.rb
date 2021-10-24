@@ -2,7 +2,6 @@ class CartItemsController < ApplicationController
   before_action :authenticate_customer!
 
   def create
-    @cart_items = CartItem.all
     @cart_item = CartItem.new(cart_item_params)
     @cart_items.each do |cart_item|
       if cart_item.item_id == @cart_item.item_id

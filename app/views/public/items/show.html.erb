@@ -1,21 +1,29 @@
 <div class="container">
-  <div class="row">
-    <div class="col-3">
+  <div class="row justify-content-center">
+    <div class="col-4">
       <%= attachment_image_tag @item, :image, :fill, 200, 150 %>
     </div>
-    <div class="col-9">
-      <h4><%= @item.name %></h4>
+    <div class="col-5">
+      <h4><strong><%= @item.name %></strong></h4>
       <p><%= @item.introduction %></p>
       <p>¥<%= @item.with_tax_price %>(税込)</p>
+      <%= form_with model: @cart_item, url: cart_items_path, local:true do |f| %>
+      <div class="row">
+        <div class="col-4">
+          <%= f.select :amount, *[1..10], prompt: "個数選択" %>
+        </div>
+        <div class="col-5">
+          <% if customer_signed_in? %>
+          <%= f.hidden_field :customer_id, value: current_customer.id %>
+          <%= f.hidden_field :item_id, value: @item.id %>
+          <%= f.submit 'カートに入れる', class:"btn-success" %>
+          <% else %>
+          <%= link_to 'カートに入れる', new_customer_session_path, class:"btn btn-success" %>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <%= form_with model: @cart_item, url: cart_items_path, local:true do |f| %>
-    <%= f.select :amount, *[1..10], prompt: "個数選択" %>
-    <%= f.hidden_field :customer_id, value: current_customer.id %>
-    <%= f.hidden_field :item_id, value: @item.id %>
-    <%= f.submit 'カートに入れる', class:"btn-success" %>
-    <% end %>
   </div>
 
 </div>
