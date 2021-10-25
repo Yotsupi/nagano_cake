@@ -8871,3 +8871,166 @@ Processing by CustomersController#edit as HTML
 Completed 200 OK in 117ms (Views: 112.7ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/orders" for 126.91.218.199 at 2021-10-25 05:52:59 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::OrdersController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/public/orders/index.html.erb:14
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:15
+  [1m[36mOrderItem Load (0.1ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/public/orders/index.html.erb:24
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:25
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:25
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:25
+  Rendered public/orders/index.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 186ms (Views: 180.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/orders/1" for 126.91.218.199 at 2021-10-25 05:53:56 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/public/orders_controller.rb:56
+  Rendering public/orders/show.html.erb within layouts/application
+  [1m[36mOrderItem Load (0.1ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/public/orders/show.html.erb:33
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/public/orders/show.html.erb:61
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/public/orders/show.html.erb:61
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/public/orders/show.html.erb:61
+  Rendered public/orders/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 100ms (Views: 93.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/customers/edit" for 126.91.218.199 at 2021-10-25 05:54:54 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#edit as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/edit.html.erb within layouts/application
+  Rendered customers/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 90ms (Views: 85.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:54:55 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 116ms (Views: 112.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:56:03 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:56:44 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 82.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:57:00 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 107ms (Views: 103.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:57:47 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 100ms (Views: 96.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:58:02 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 109ms (Views: 105.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:58:29 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:58:47 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 113ms (Views: 108.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:58:54 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:59:01 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 94ms (Views: 90.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/confirm" for 126.91.218.199 at 2021-10-25 05:59:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#confirm as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/confirm.html.erb within layouts/application
+  Rendered customers/confirm.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 112ms (Views: 108.4ms | ActiveRecord: 0.1ms)
+
+
