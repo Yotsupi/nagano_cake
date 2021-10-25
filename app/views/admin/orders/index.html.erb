@@ -1,7 +1,11 @@
 <div class="container">
-  <h4>注文履歴一覧</h4>
+  <h3 class="ml-5">
+    <span style="background: linear-gradient(transparent 50%, #ffcccc 0%);">
+      注文履歴一覧
+    </span>
+  </h3>
   <table class="table">
-    <thead>
+    <thead class="table-active">
       <th>購入日時</th>
       <th>購入者</th>
       <th>注文個数</th>
@@ -11,7 +15,7 @@
       <tr>
         <td>
           <%= link_to admin_order_path(order.id) do %>
-          <%= order.created_at %>
+          <%= l order.created_at %>
           <% end %>
         </td>
         <td><%= order.customer.name %></td>
