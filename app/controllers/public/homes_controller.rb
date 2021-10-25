@@ -1,6 +1,6 @@
 class Public::HomesController < ApplicationController
   def top
-    @items = Item.order(updated_at: :desc).limit(4)
+    @items = Item.where(is_active: 'true').order(updated_at: :desc).limit(4)
   end
 
   def about

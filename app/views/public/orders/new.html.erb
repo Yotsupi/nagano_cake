@@ -30,7 +30,7 @@
       <%= f.label :address, "登録住所から選択" %>
       </span>
       <div class="col-12">
-      <%= f.collection_select :address_id, @addresses, :id, :address_information  %>
+      <%= f.collection_select :address_id, @addresses.where(customer_id: current_customer.id), :id, :address_information  %>
       </div>
     </div>
     <div class="row ml-3">
