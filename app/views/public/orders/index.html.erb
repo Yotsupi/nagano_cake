@@ -1,10 +1,12 @@
 <div class="container">
-  <div class="row">
-    <h4>注文履歴一覧</h4>
+  <div class="row mb-3">
+    <h4 class="ml-5">
+      <span style="background: linear-gradient(transparent 50%, #ffcccc 0%);">注文履歴一覧</span>
+    </h4>
   </div>
   <div class="row">
     <table class="table table-bordered">
-      <thead>
+      <thead class="table-active">
         <th>注文日</th>
         <th>配送先</th>
         <th>注文商品</th>
@@ -14,19 +16,19 @@
       <% @orders.each do |order| %>
       <% if order.customer == current_customer %>
       <tbody>
-        <td><%= order.created_at.strftime('%Y/%m/%d') %></td>
-        <td>
-          <%= order.postal_code %><br>
+        <td class="align-middle"><%= order.created_at.strftime('%Y/%m/%d') %></td>
+        <td class="align-middle">
+          〒<%= order.postal_code %><br>
           <%= order.address %><br>
           <%= order.name %>
         </td>
-        <td>
+        <td class="align-middle">
           <% order.order_items.each do |order_item| %>
             <%= order_item.item.name %><br>
           <% end %>
         </td>
-        <td><%= order.billing_amount %></td>
-        <td><%= link_to "表示する", order_path(order.id), class:"btn btn-sm btn-primary" %></td>
+        <td class="align-middle"><%= order.billing_amount.to_s(:delimited) %>円</td>
+        <td class="align-middle"><%= link_to "表示する", order_path(order.id), class:"btn btn-sm btn-primary" %></td>
       </tbody>
       <% end %>
       <% end %>

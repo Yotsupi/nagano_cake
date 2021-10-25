@@ -9,8 +9,7 @@
   </div>
 </div>
 
-<form>
-<%= form_for(resource, as: resource_name, url: customer_session_path(resource_name)) do |f| %>
+<%= form_with model: @customer, url: customer_session_path, id: 'new_customer', class: 'new_customer', local: true do |f| %>
   <div class="form-group row justify-content-center">
     <div class="col-6">
       <div class="row mx-auto">
@@ -32,13 +31,12 @@
         <div class="col-sm-8">
         <%= f.password_field :password, autocomplete: "current-password", class: "form-control" %>
         <br>
-        <%= f.submit "ログイン", class: 'btn btn-sm btn-primary' %>
+        <%= f.submit "ログイン", class: "btn btn-sm btn-primary" %>
         </div>
       </div>
     </div>
   </div>
 <% end %>
-</form>
 
 <div class="row justify-content-center">
   <div class="col-8">
