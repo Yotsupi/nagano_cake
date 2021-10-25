@@ -22,16 +22,16 @@
         <%= attachment_image_tag cart_item.item, :image, :fill, 80, 60 %>
         <%= cart_item.item.name %>
       </td>
-      <td style="vertical-align: middle;"><%= cart_item.item.with_tax_price %></td>
-      <td style="vertical-align: middle;">
+      <td class="align-middle"><%= cart_item.item.with_tax_price %></td>
+      <td class="align-middle">
         <%= form_with model: cart_item, url: cart_item_path(cart_item.id), local:true do |f| %>
         <%= f.select :amount, *[1..10], prompt: cart_item.amount %>
         <%= f.submit "変更", class: "btn btn-success" %>
         <% end %>
       </td>
-      <td style="vertical-align: middle;"><%= cart_item.subtotal %></td>
+      <td class="align-middle"><%= cart_item.subtotal %></td>
       <% @total += cart_item.subtotal %>
-      <td style="vertical-align: middle;"><%= link_to "削除する", cart_item_path(cart_item.id), method: :delete, class:"btn btn-sm btn-danger" %></td>
+      <td class="align-middle"><%= link_to "削除する", cart_item_path(cart_item.id), method: :delete, class:"btn btn-sm btn-danger" %></td>
     </tbody>
     <% end %>
   </table>
