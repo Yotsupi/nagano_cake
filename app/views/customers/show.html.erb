@@ -1,9 +1,15 @@
 <div class="container">
-<h4>マイページ</h4>
+<h4 class="ml-5">
+  <span style="background: linear-gradient(transparent 50%, #ffcccc 0%);">マイページ</span>
+</h4>
 
 <div class="row mt-3">
-<strong>登録情報　</strong>
-<%= link_to "編集する" , edit_customers_path, class: "btn btn-sm btn-success" %>
+  <div class="col-2">
+    <strong>登録情報　</strong>
+  </div>
+  <div class="col-8">
+    <%= link_to "編集する" , edit_customers_path, class: "btn btn-sm btn-success" %>
+  </div>
 </div>
 
 <div class="row mt-3">
@@ -36,12 +42,20 @@
 </div>
 
 <div class="row mb-3">
-  <strong>配送先　</strong>
-  <%= link_to "一覧を見る", address_index_path, class: "btn btn-primary" %>
+  <div class="col-2">
+    <strong>配送先</strong>
+  </div>
+  <div class="col-8">
+    <%= link_to "一覧を見る", address_index_path, class: "btn btn-primary" %>
+  </div>
 </div>
 <div class="row mb-3">
-  <strong>注文履歴　</strong>
-  <%= link_to "一覧を見る", orders_path, class: "btn btn-primary" %>
+  <div class="col-2">
+    <strong>注文履歴</strong>
+  </div>
+  <div class="col-8">
+    <%= link_to "一覧を見る", orders_path, class: "btn btn-primary" %>
+  </div>
 </div>
 
 </div>
