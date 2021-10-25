@@ -9488,3 +9488,840 @@ Processing by AddressController#index as HTML
 Completed 200 OK in 123ms (Views: 106.5ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:50:56 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:27
+  Rendered address/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 95ms (Views: 90.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:51:17 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:27
+  Rendered address/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 110ms (Views: 106.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:51:42 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:27
+  Rendered address/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 106ms (Views: 101.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cart_items" for 126.91.218.199 at 2021-10-25 06:51:53 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartItemsController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering cart_items/index.html.erb within layouts/application
+  [1m[36mCartItem Load (0.2ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items"[0m
+  ↳ app/views/cart_items/index.html.erb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "cart_items"[0m
+  ↳ app/views/cart_items/index.html.erb:56
+  Rendered cart_items/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 113ms (Views: 101.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/customers" for 126.91.218.199 at 2021-10-25 06:52:38 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:52:40 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:27
+  Rendered address/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 110ms (Views: 105.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:53:25 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:27
+  Rendered address/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 110ms (Views: 105.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:53:45 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:27
+  Rendered address/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:54:47 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 127ms (Views: 118.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:54:56 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:55:05 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 111ms (Views: 107.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:55:17 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 93ms (Views: 88.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:55:39 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 105ms (Views: 101.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:55:46 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 107ms (Views: 102.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:56:40 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 97ms (Views: 92.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:56:50 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:31
+  Rendered address/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 106ms (Views: 102.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:58:00 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:40
+  Rendered address/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 91ms (Views: 87.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:58:12 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:40
+  Rendered address/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 112ms (Views: 105.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:58:28 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (2.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  Rendered address/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+...buffer.append=( f.label "宛名" );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ame, placeholder: "令和道子" );@output_buffer.safe_appen...
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...append=( f.submit "新規登録", class:"btn-success" );@out...
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...bmit "新規登録", class:"btn-success" );@output_buffer.sa...
+...                            ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:28: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...規登録", class:"btn-success" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="row">
+              ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <table class="table table-bordered">
+                  ^~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...le class="table table-bordered">
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+....append=( link_to "編集する", edit_address_path(address....
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss_path(address.id), class:"btn btn-danger mr-3" );@output_b...
+...                            ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+...s.id), class:"btn btn-danger mr-3" );@output_buffer.safe_app...
+...                             ^~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tSTRING_BEG, expecting ')'
+...d), class:"btn btn-danger mr-3" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+....append=( link_to "削除する", address_path(address.id), ...
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+...), method: :delete, class: "btn btn-success" );@output_buffe...
+...                            ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:48: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...elete, class: "btn btn-success" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:60: unterminated string meets end of file
+          end
+              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:60: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/address/index.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:28: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/address/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/address/index.html.erb:47: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:48: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/address/index.html.erb:60: unterminated string meets end of file
+app/views/address/index.html.erb:60: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/customers" for 126.91.218.199 at 2021-10-25 06:58:36 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 101ms (Views: 97.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders" for 126.91.218.199 at 2021-10-25 06:58:39 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::OrdersController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering public/orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/views/public/orders/index.html.erb:14
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:15
+  [1m[36mOrderItem Load (0.1ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = ?[0m  [["order_id", 1]]
+  ↳ app/views/public/orders/index.html.erb:24
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:25
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:25
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/public/orders/index.html.erb:25
+  Rendered public/orders/index.html.erb within layouts/application (91.2ms)
+Completed 200 OK in 203ms (Views: 185.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:58:42 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  Rendered address/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+...buffer.append=( f.label "宛名" );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ame, placeholder: "令和道子" );@output_buffer.safe_appen...
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...append=( f.submit "新規登録", class:"btn-success" );@out...
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...bmit "新規登録", class:"btn-success" );@output_buffer.sa...
+...                            ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:28: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...規登録", class:"btn-success" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="row">
+              ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <table class="table table-bordered">
+                  ^~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...le class="table table-bordered">
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+....append=( link_to "編集する", edit_address_path(address....
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ss_path(address.id), class:"btn btn-danger mr-3" );@output_b...
+...                            ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+...s.id), class:"btn btn-danger mr-3" );@output_buffer.safe_app...
+...                             ^~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:47: syntax error, unexpected tSTRING_BEG, expecting ')'
+...d), class:"btn btn-danger mr-3" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+....append=( link_to "削除する", address_path(address.id), ...
+...                   ^~~~~~~~~~~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+...), method: :delete, class: "btn btn-success" );@output_buffe...
+...                            ^~~
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:48: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...elete, class: "btn btn-success" );@output_buffer.safe_append...
+...                              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:60: unterminated string meets end of file
+          end
+              ^
+/home/ec2-user/environment/nagano_cake/app/views/address/index.html.erb:60: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/address/index.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:28: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/address/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting do or '{' or '('
+app/views/address/index.html.erb:47: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:48: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/address/index.html.erb:48: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/address/index.html.erb:60: unterminated string meets end of file
+app/views/address/index.html.erb:60: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:59:15 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:40
+  Rendered address/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 96ms (Views: 89.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 06:59:26 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:40
+  Rendered address/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 90ms (Views: 86.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:00:42 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 160ms (Views: 156.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:01:39 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 111ms (Views: 107.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:02:00 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 91ms (Views: 86.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:02:03 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 124ms (Views: 119.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:02:43 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 92ms (Views: 87.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:03:45 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 105ms (Views: 100.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:04:16 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 90ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:04:31 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 160ms (Views: 155.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:04:59 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 89ms (Views: 84.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:05:08 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:05:16 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:46
+  Rendered address/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:05:53 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:11:16 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 94ms (Views: 88.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:12:04 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 110ms (Views: 105.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:12:13 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 91ms (Views: 87.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:13:29 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  Rendered address/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/address" for 126.91.218.199 at 2021-10-25 07:13:42 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"83HmNDuw9ELRatg6yS1rJ349MxfF1ZD42gnjBcRSgCz91vPkmU2Yz1gONl66Aw1iYLviWJDivVAj1EOSeUVEww==", "address"=>{"postal_code"=>"1234569", "address"=>"広島県広島市", "name"=>"綾小路彩乃", "customer_id"=>"2"}, "commit"=>"新規登録"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/address_controller.rb:11
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/address_controller.rb:11
+  [1m[36mAddress Create (3.5ms)[0m  [1m[32mINSERT INTO "addresses" ("name", "postal_code", "address", "created_at", "updated_at", "customer_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "綾小路彩乃"], ["postal_code", "1234569"], ["address", "広島県広島市"], ["created_at", "2021-10-25 07:13:42.834608"], ["updated_at", "2021-10-25 07:13:42.834608"], ["customer_id", 2]]
+  ↳ app/controllers/address_controller.rb:11
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/address_controller.rb:11
+Redirected to https://06717a11ba7b43c0a567790d475a4dc9.vfs.cloud9.us-east-1.amazonaws.com/address
+Completed 302 Found in 20ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:13:43 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 97ms (Views: 93.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:14:03 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 117ms (Views: 113.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:14:11 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:14:23 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 107ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-25 07:14:43 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" IN (?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/controllers/public/homes_controller.rb:3
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 100ms (Views: 93.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 126.91.218.199 at 2021-10-25 07:14:44 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Public::HomesController#top as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" IN (?, ?, ?, ?)[0m  [["id", 1], ["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/controllers/public/homes_controller.rb:3
+  Rendering public/homes/top.html.erb within layouts/application
+  Rendered public/homes/top.html.erb within layouts/application (3.9ms)
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:24
+Completed 200 OK in 115ms (Views: 111.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/customers" for 126.91.218.199 at 2021-10-25 07:14:46 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CustomersController#show as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 95ms (Views: 91.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:14:48 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 100ms (Views: 95.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:15:18 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 98ms (Views: 93.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:16:43 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (1.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 166ms (Views: 155.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:16:58 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 109ms (Views: 105.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:17:05 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (37.3ms)
+Completed 200 OK in 219ms (Views: 210.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:17:21 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 111ms (Views: 107.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address" for 126.91.218.199 at 2021-10-25 07:17:29 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering address/index.html.erb within layouts/application
+  [1m[36mAddress Load (0.1ms)[0m  [1m[34mSELECT "addresses".* FROM "addresses"[0m
+  ↳ app/views/address/index.html.erb:47
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/address/index.html.erb:48
+  Rendered address/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 93ms (Views: 88.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address/1/edit" for 126.91.218.199 at 2021-10-25 07:18:37 +0000
+Cannot render console from 126.91.218.199! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AddressController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? ORDER BY "customers"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.2ms)[0m  [1m[34mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/address_controller.rb:16
+  Rendering address/edit.html.erb within layouts/application
+  Rendered address/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 104ms (Views: 96.9ms | ActiveRecord: 0.3ms)
+
+
