@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>商品一覧(全<%= @items.count %>件)</h2>
+  <h2>商品一覧(全<%= Item.where(is_active: 'true').count %>件)</h2>
 
   <div class="row">
     <% @items.each do |item|  %>
