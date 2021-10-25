@@ -1,11 +1,13 @@
 <div class="container">
-  <div class="row">
-  <h2>商品一覧</h2>
+  <div class="row d-flex justify-content-between mx-3">
+  <h3>
+    <span style="background: linear-gradient(transparent 50%, #ffcccc 0%);">商品一覧</span>
+  </h3>
   <%= link_to "+", new_admin_item_path, class:"btn btn-light rounded-circle p-0 shadow-sm", style:"width:2rem;height:2rem;" %>
   </div>
 
   <table class="table">
-    <thead>
+    <thead class="table-active">
       <th>商品ID</th>
       <th>商品名</th>
       <th>税抜価格</th>
@@ -20,9 +22,9 @@
       <td><%= item.genre.name %></td>
       <td>
         <% if item.is_active == true %>
-        販売中
+        <span class="text-success">販売中</span>
         <% else %>
-        販売停止中
+        <span class="text-muted">販売停止中</span>
         <% end %>
       </td>
     </tbody>
